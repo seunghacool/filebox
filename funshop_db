@@ -1,0 +1,59 @@
+create database funshop_db; 
+
+use funshop_db; 
+
+ 
+
+create table members( 
+
+m_id char(13) primary key, 
+
+m_pw char(25) not null, 
+
+m_name char(20) not null, 
+
+m_addr varchar(100), 
+
+reg_date date 
+
+); 
+
+insert into members values('babo','1234','바보','바보시 바보구 바보동','2010-10-5'); 
+
+insert into members values('trump','1111','트럼프','바보시 바보구 바보동','2010-11-5'); 
+
+insert into members values('obama','2222','오바마','바보시 바보구 바보동','2010-12-3'); 
+
+insert into members values('abe','3333','아베','바보시 바보구 바보동','2011-10-15'); 
+
+insert into members values('jobs','4444','스티브잡스','바보시 바보구 바보동','2012-5-21'); 
+
+insert into members values('bill','5555','빌게이츠','바보시 바보구 바보동','2013-2-17'); 
+
+insert into members values('skh','6666','신기해','바보시 바보구 바보동','2013-8-25'); 
+
+insert into members values('haha','7777','하하','바보시 바보구 바보동','2014-3-1'); 
+
+insert into members values('huhu','8888','후후후','바보시 바보구 바보동','2015-6-5'); 
+
+insert into members values('marine','9999','마린짱','바보시 바보구 바보동','2016-11-30'); 
+
+insert into members values('starwars','1212','다스베이더','바보시 바보구 바보동','2017-9-11'); 
+
+ 
+
+ 
+
+create table board( 
+
+b_no int primary key auto_increment, 
+
+b_subject char(30) not null, 
+
+b_contents varchar(400), 
+
+b_writer char(15), 
+
+b_reg datetime 
+
+); 
